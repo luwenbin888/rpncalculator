@@ -6,11 +6,11 @@ import java.math.BigDecimal;
 import java.util.Stack;
 
 /**
- * Abstract class for all operators.
+ * Abstract class for all numeric operators.
  *
  * Any concrete operator class should override:
- * 1) operandCount method to indicate how many operands involved
- * 2) execute method to do real operation
+ * 1) operandCount to indicate how many operands involved
+ * 2) execute to do real operation
  */
 public abstract class AbstractOperator implements Operator{
     abstract BigDecimal execute(BigDecimal... operands);

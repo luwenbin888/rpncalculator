@@ -25,6 +25,11 @@ public class Operators {
         validOperators.put(UNDO, new UndoOperator());
     }
 
+    /**
+     * Factory strategy method to get Operator from a operator str
+     * @param token
+     * @return
+     */
     public static Operator getOperator(String token) {
         return validOperators.get(token);
     }
